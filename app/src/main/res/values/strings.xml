@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">QuickMeds</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homepage">HomePage</string>
+    <string name="likepage">LikePage</string>
+    <string name="cartpage">CartPage</string>
+    <string name="profilepage">ProfilePage</string>
+    <string name="likeitem">LikeItem</string>
+    <string name="trending">Trending</string>
+    <string name="see_all">See All</string>
+    <string name="button">Button</string>
+    <string name="med4_name">Oligocare</string>
+    <string name="med4_price">400</string>
+    <string name="med4_content_description">Med4</string>
+    <string name="add">+</string>
+    <string name="remove">-</string>
+    <string name="size">Size :</string>
+    <string name="med3">Himalya Liv 52 DS</string>
+    <string name="med3_content_description">med3 content description</string>
+    <string name="subtotal_items_0">SubTotal Items(0)</string>
+    <string name="_0">₹0</string>
+    <string name="delivery_price">Delivery Price</string>
+    <string name="total_price">Total Price</string>
+    <string name="checkout">Checkout</string>
+    <string name="med7_name">Calpol 650mg</string>
+    <string name="med7_description">Calpol 650 MG tablet is a popular over-the-counter medication used for the relief of pain and fever. It contains the active ingredient paracetamol (also known as acetaminophen), which is a widely used analgesic (painkiller) and antipyretic (fever reducer) medication. \n\nCalpol 650 MG Tablet is used to relieve pain and fever associated with a variety of conditions, including headaches, toothaches, menstrual cramps, flu, and other common ailments. It works by inhibiting the production of certain chemicals in the body that cause pain and fever.</string>
+    <string name="price">Price</string>
+    <string name="med7_price">65</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="already_registered_sign_in">Already Registered , Sign In !</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="type_your_email">Type your Email</string>
+    <string name="type_your_password">Type Your Password</string>
+    <string name="retype_your_password">Retype Your Password</string>
+    <string name="not_registered_yet_sign_up">Not Registered Yet , Sign Up !</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_new_account_signup">Create New Account ? SignUp</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="already_have_account_signin">Already have Account ? SignIn</string>
+</resources>
