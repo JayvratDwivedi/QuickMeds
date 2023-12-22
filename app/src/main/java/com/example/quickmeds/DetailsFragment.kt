@@ -101,17 +101,13 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
             // TODO: Add Data to FireBase FireStore Database
 
-            val orderedProduct = ProductOrderModel(currentUID,productId,orderImageUrl,orderName,orderQuantity,orderPrice)
+            val orderedProduct = ProductOrderModel(currentUID, productId, orderImageUrl, orderName, orderQuantity, orderPrice)
 
+            addDataToOrdersDatabase(orderedProduct)
 
-
-                addDataToOrdersDatabase(orderedProduct)
-
-                Navigation.findNavController(view).navigate(R.id.action_detailsFragment_to_cartFragment)
-
-
-
+            Navigation.findNavController(view).navigate(R.id.action_detailsFragment_to_cartFragment)
         }
+
 
     }
 
