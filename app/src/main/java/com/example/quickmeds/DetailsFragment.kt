@@ -33,7 +33,6 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
     private lateinit var currentUID :  String
     private lateinit var orderImageUrl:String
     private lateinit var orderName:String
-    private var orderSize:String?  = null
     private var orderQuantity:Int  = 1
     private lateinit var orderPrice:String
 
@@ -74,7 +73,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                             orderPrice = products.price!!
 
                             binding.tvDetailsProductPrice.text = "₹${products.price}"
-                            binding.tvDetailsProductName.text = "${products.brand} ${products.name}"
+                            binding.tvDetailsProductName.text = "${products.name}"
                             binding.tvDetailsProductDescription.text = products.description
                         }
 
@@ -102,15 +101,14 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
             // TODO: Add Data to FireBase FireStore Database
 
-            val orderedProduct = ProductOrderModel(currentUID,productId,orderImageUrl,orderName,orderSize,orderQuantity,orderPrice)
+            val orderedProduct = ProductOrderModel(currentUID,productId,orderImageUrl,orderName,orderQuantity,orderPrice)
 
-            if(orderSize.isNullOrBlank()){
-                requireActivity().toast("Select Size")
-            }else{
+
+
                 addDataToOrdersDatabase(orderedProduct)
 
                 Navigation.findNavController(view).navigate(R.id.action_detailsFragment_to_cartFragment)
-            }
+
 
 
         }

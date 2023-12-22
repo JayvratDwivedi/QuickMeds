@@ -97,18 +97,6 @@
             android:textColor="@color/greyishtext"
             />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select size"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

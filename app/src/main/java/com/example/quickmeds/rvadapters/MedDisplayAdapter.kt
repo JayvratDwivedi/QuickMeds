@@ -29,7 +29,7 @@ class MedDisplayAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = list[position]
-        holder.binding.tvNameMedDisplayItem.text = "${currentItem.brand} ${currentItem.name}"
+        holder.binding.tvNameMedDisplayItem.text = "${currentItem.name}"
         holder.binding.tvPriceMedDisplayItem.text = "₹${currentItem.price}"
 
 

@@ -24,7 +24,7 @@ class CartFragment : Fragment(R.layout.fragment_cart), CartAdapter.OnLongClickRe
     private lateinit var auth: FirebaseAuth
     private lateinit var adapter: CartAdapter
     private var subTotalPrice = 0
-    private var totalPrice = 240
+    private var totalPrice = 0
 
     private var orderDatabaseReference = Firebase.firestore.collection("orders")
 
@@ -107,7 +107,6 @@ class CartFragment : Fragment(R.layout.fragment_cart), CartAdapter.OnLongClickRe
         orderDatabaseReference
             .whereEqualTo("uid", item.uid)
             .whereEqualTo("pid", item.pid)
-            .whereEqualTo("size", item.size)
             .get()
             .addOnSuccessListener { querySnapshot ->
 

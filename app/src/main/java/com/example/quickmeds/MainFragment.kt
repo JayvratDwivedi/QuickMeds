@@ -53,18 +53,6 @@ class MainFragment : Fragment(R.layout.fragment_main),
         auth = FirebaseAuth.getInstance()
 
 
-        // region implements category Recycler view
-
-        categoryList.add("Trending")
-        binding.rvMainCategories.setHasFixedSize(true)
-        val categoryLayoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-        binding.rvMainCategories.layoutManager = categoryLayoutManager
-        categoryAdapter = MainCategoryAdapter(categoryList, this)
-        binding.rvMainCategories.adapter = categoryAdapter
-        setCategoryList()
-
-        // endregion implements category Recycler view
-
 
         // region implements products Recycler view
 

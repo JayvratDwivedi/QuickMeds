@@ -17,7 +17,7 @@ class CartAdapter(
     inner class ViewHolder(val binding: CartproductItemBinding):RecyclerView.ViewHolder(binding.root){
 
         private val onSwipeDelete = object : SwipeToDelete() {
-            fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val position = viewHolder.adapterPosition
                 list.removeAt(position)
             }
@@ -42,7 +42,6 @@ class CartAdapter(
         holder.binding.tvCartProductName.text = currentItem.name
         holder.binding.tvCartProductPrice.text = "₹${currentItem.price}"
         holder.binding.tvCartItemCount.text = currentItem.quantity.toString()
-        holder.binding.tvCartProductSize.text = currentItem.size
 
         var count = holder.binding.tvCartItemCount.text.toString().toInt()
 
